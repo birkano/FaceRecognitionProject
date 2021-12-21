@@ -32,7 +32,7 @@ class ViewController: UIViewController {
                 //eğer faceid eşleşiyorsa
                 if success == true {
                     //oldu
-                    DispatchQueue.main.async { //main threadda çalıştırdık
+                    DispatchQueue.main.async { //taskları nerede çalıştıracağımızı belirttik
                     self.performSegue(withIdentifier: "toSecondVC", sender: nil) //butona tıklayınca tosecondVC'ye gönderdik
                         self.myLabel.text = "Login succesfull"
                     }
